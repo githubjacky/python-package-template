@@ -1,4 +1,4 @@
-# Data Science Cookie Cutter
+# Python Package Cookie Cutter
 1. modify the settings in cookiecutter.json
 2. create project from the template
 ```sh
