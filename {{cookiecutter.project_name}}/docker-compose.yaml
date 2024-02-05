@@ -35,19 +35,6 @@ services:
     command: bash -c "rm -f docs/{{cookiecutter.project_dir}}* && sphinx-apidoc -o docs {{cookiecutter.project_dir}} && cd docs && make clean html"
 
 
-
-
-  # shell command: docker compose run --rm --service-ports mlflow_ui
-  mlflow-ui:
-    image: 0jacky/$PROJ:latest
-    container_name: mlflow-ui
-    ports:
-      - "5050:5050"
-    volumes:
-      - $PWD/mlruns:/home/$DOCKER_USER/$PROJ/mlruns
-    command: mlflow ui -h 0.0.0.0 -p 5050
-
-
   # shell command: docker compose run --rm --service-ports jupyter
   jupyter-lab:
     image: 0jacky/$PROJ:latest
