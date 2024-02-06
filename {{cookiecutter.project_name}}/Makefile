@@ -1,4 +1,4 @@
-.PHONY: first_build build clean pytest doc jupyter mlflow
+.PHONY: first_build build up down clean pytest doc jupyter mlflow
 
 
 first_build:
@@ -14,6 +14,14 @@ first_build:
 
 build:
 	docker compose build
+
+
+up:
+	docker compose up
+
+
+down:
+	docker compose down
 
 
 clean:
