@@ -20,7 +20,7 @@ make clean
 make pytest
 
 # project documentation
-make pydoc
+make doc
 
 # development IDE - Jupyter Lab
 make jupyter
