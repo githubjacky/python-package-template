@@ -15,6 +15,8 @@ services:
       - $PWD/log:/home/$DOCKER_USER/$PROJ/log
       - $PWD/data:/home/$DOCKER_USER/$PROJ/data
       - $PWD/{{cookiecutter.project_dir}}:/home/$DOCKER_USER/$PROJ/{{cookiecutter.project_dir}}
+      - $PWD/scripts:/home/$DOCKER_USER/$PROJ/scripts
+    command: python scripts/run.py
 
 
   pytest:

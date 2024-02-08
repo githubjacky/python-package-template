@@ -17,7 +17,7 @@ build:
 
 
 up:
-	docker compose up
+	docker compose run --rm {{cookiecutter.project_name}}
 
 
 down:
